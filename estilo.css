@@ -1,0 +1,217 @@
+body {
+    background-color: rgb(21, 32, 43);
+    margin: 0;
+    padding: 0;
+}
+* {
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+                box-sizing: border-box;
+}
+.container {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 23% 44% 33%; 
+    grid-template-rows: 100vh;
+}
+
+/* MENU PRINCIPAL */
+header {
+    grid-area: header;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+header .logo a{
+    padding-left: 4%; 
+}
+header .ajuste-menu {
+    position: fixed;
+    margin-left: 3.5%;
+    height: 100%;
+    
+}
+
+header .nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 6%;
+    margin-left: 2%;
+}
+header nav ul {
+    padding: 0;
+    margin: 0;
+}
+header nav ul .item{
+    margin-bottom: 4px;
+    width: 17vw;
+    height: 45px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header nav .ajuste-menu-2 {
+    padding: 3% 3% 3% 0;
+    height: 100%;
+    width: 12vw;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+header nav .ajuste-menu-2:hover {
+    border-radius: 50px;
+    background-color: rgba(29, 161, 242, 0.1);
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.2s;
+}
+ header nav .menu-tit{
+     padding-left: 12%;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+     white-space: nowrap;
+     line-height: 1.3125;
+     font-weight: bold;
+     color: #fff;
+     margin: 0;
+ }
+
+ header nav .ajuste-menu-itens{
+     width: 100%;
+ }
+
+ header .botao-tweet{
+     width: 95%;
+     margin-bottom: 4px;
+     margin-top: 4px;
+     height: 45px;
+ }
+
+ header .botao-tweet a{
+    padding: 0;
+    background-color: rgb(29, 161, 242);
+    border-radius: 50px;
+    padding-left: 26px;
+    padding-right: 26px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9em;
+    font-weight: bold;
+    line-height: 1.3125;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+
+ }
+ header .botao-tweet a:hover{
+    background-color: rgb(29, 161, 242, 0.9);
+    transition-duration: 0.2s;
+ }
+
+ /* CONTEUDO PRINCIPAL */
+main {
+    grid-area: main;
+    border-left:  2px solid rgba(29, 161, 242, 0.1);
+    border-right:  2px solid rgba(29, 161, 242, 0.1);
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+main .inicial-topo {
+    width: 100%;
+    height: 46px;
+    padding: 0 13px 0 13px;
+    display: flex;
+    border-bottom: 2px solid rgba(29, 161, 242, 0.1);
+}
+
+main .topo-titulo {
+    width: 90%;
+    height: 46px;
+}
+
+main .topo-icone {
+    width: 10%;
+    height: 46px;
+}
+
+main .topo-texto {
+ 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font-size: 1em;
+    color: #fff;
+    font-weight: bold;
+}
+
+main .topo-destaque{
+    display: flex;
+    align-items: center;
+    height: 46px;
+    width: 100%;
+    padding-left: 17px;
+}
+/* CONTEUDO LATERAL DIREITO */
+section {
+    grid-area: section;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+section .lateral-buscar {
+    margin-bottom: 9px;
+    width: 85%;
+    height: 46px;
+    display: flex;
+    align-items: stretch;
+}
+
+section .buscar {
+    background-color: rgb(37, 51, 65);
+    display: flex;
+    width: 98%;
+    margin-top:6px;
+    height: 38px;
+    border-radius: 50px;
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+}
+
+section .icone-buscar{
+    width: 10%;
+    height: 38px;
+    padding-left: 4%;
+    display: flex;
+    align-items: center;
+}
+
+section .imput-buscar {
+    height: 36px;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    overflow-wrap: break-word;
+    line-height: 1.3125;
+
+}
+
+section .input-buscar {
+    resize: none;
+    -webkit-appearance: none;
+    text-align: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+    outline-style: none;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    padding: 9px;
+    border: inherit;
+}
