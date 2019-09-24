@@ -113,8 +113,8 @@ header nav .ajuste-menu-2:hover {
  /* CONTEUDO PRINCIPAL */
 main {
     grid-area: main;
-    border-left:  2px solid rgba(29, 161, 242, 0.1);
-    border-right:  2px solid rgba(29, 161, 242, 0.1);
+    border-left:  1px solid rgb(56, 68, 77);;
+    border-right:  1px solid rgb(56, 68, 77);;
     grid-column: 2/3;
     grid-row: 1/2;
 }
@@ -122,25 +122,25 @@ main {
 main .inicial-topo {
     width: 100%;
     height: 46px;
-    padding: 0 13px 0 13px;
+    padding: 0 4px 0 13px;
     display: flex;
-    border-bottom: 2px solid rgba(29, 161, 242, 0.1);
+    border-top: 3px solid rgb(56, 68, 77);;
+    border-bottom: 1px solid rgb(56, 68, 77);;
 }
 
 main .topo-titulo {
     width: 90%;
-    height: 46px;
+    height: 100%;
 }
 
 main .topo-icone {
     width: 10%;
-    height: 46px;
+    height: 100%;
 }
 
 main .topo-texto {
- 
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
-    font-size: 1em;
+    font-size: 16px;
     color: #fff;
     font-weight: bold;
 }
@@ -148,9 +148,80 @@ main .topo-texto {
 main .topo-destaque{
     display: flex;
     align-items: center;
-    height: 46px;
+    height: 100%;
     width: 100%;
     padding-left: 17px;
+}
+
+main .topo-twittar {
+    width: 100%;
+    height: 95px;
+    margin-top: 8px;
+}
+
+main .perfil-twittar{
+    height: 100%;
+    width: 8%;
+    display: flex;
+    align-items: flex-start;
+}
+
+main .perfil-twittar img{
+    border-radius: 50px;
+}
+main .acontece-twittar{
+    margin: 0 0 9px 9px;
+    width: 90%;
+    height: 90%;
+}
+
+main .busca-twittar {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    background-color:  rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    overflow-wrap: break-word;
+
+}
+main .input-twittar {
+    resize: none;
+    -webkit-appearance: none;
+    text-align: inherit;
+    color: white;
+    font-size: inherit;
+    font-family: inherit;
+    outline-style: none;
+    background-color: inherit;
+    width: 100%;
+    padding: 9px 9px 9px 0;
+    border: inherit;
+    font: inherit;
+    text-shadow: inherit;
+}
+
+main .icone-twittar{
+    width: 100%;
+    height: 40%;
+}
+
+main .icones-twittar{
+    width: 35%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    margin-top: 9px;
+}
+
+main .item-icone-twittar{
+    width: 32px;
+    height: 32px;
+    margin-right: 9px;
+    display:flex;
+    align-items: center;
 }
 /* CONTEUDO LATERAL DIREITO */
 section {
