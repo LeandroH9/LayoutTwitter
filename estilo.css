@@ -308,10 +308,18 @@ main .twitter-do-caralho {
 
 main .fundo-tweetfirst {
     width: 100%;
-    padding: 9px 13px 0 13px; 
+    padding: 9px 13px 5px 13px; 
     display: flex;
     flex-direction: row;
     height: 100%;
+    border-bottom: 1px solid rgb(56, 68, 77);
+    cursor: pointer;
+}
+
+
+main .fundo-tweetfirst:hover {
+    background-color: rgb(27, 41, 54);
+    transition: 0.2s;
 }
 
 main .tweetfirst-maykon-perfil {
@@ -374,6 +382,64 @@ main .imagem-tweet img{
     border: 0.1px solid #fff;
 }
 
+main .interagir-tweet{
+    margin-top: 9px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    width: 80%;
+    height: 30px;
+    margin-left: 4px;
+}
+
+main .icon-tweet{
+    flex-grow: 1;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main .bloco-icon{
+    height: 90%;
+    display: flex;
+    align-items: center;
+}
+
+main .texto-icon{
+    width: 75%;
+    height: 100%;
+    margin-left: 9px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    line-height: 1.3125;
+    color: rgb(136, 153, 166);
+    font-weight: 400;
+    font-size: 13px;
+}
+
+main .icon-tweet:hover .icon-1 path{
+    fill: rgb(29, 161, 242);
+}
+
+main .icon-tweet:hover .tex1 {
+    color: rgb(29, 161, 242);
+}
+
+main .icon-tweet:hover .icon-2 path{
+    fill: rgb(3, 165, 38);
+}
+
+main .icon-tweet:hover .tex2 {
+    color: rgb(3, 165, 38);
+}
+
+main .icon-tweet:hover .icon-3 path{
+    fill: rgb(209, 28, 73);
+}
+
+main .icon-tweet:hover .tex3 {
+    color: rgb(209, 28, 73);
+}
 /* CONTEUDO LATERAL DIREITO */
 section {
     grid-area: section;
@@ -451,9 +517,17 @@ section .titulo-trend span{
     font-size: 16px;
     color: #fff;
     font-weight: bold;
+    width: 92%;
 }
 
+
+section .trend-icon{
+    height: 1.1rem;
+}
+
+
 section .fundo-trend1{
+    cursor: pointer;
     width: 100%;
     border-top:  1px solid rgb(56, 68, 77);
     height: 85px;
@@ -491,14 +565,25 @@ section .trend-infprincipal{
     line-height: 1.3125;
 }
 
-
 section .fundo-trend{
+    cursor: pointer;
     width: 100%;
     border-top:  1px solid rgb(56, 68, 77);
     height: 60px;
     display: flex;
     flex-direction: column;
     padding: 9px 13px 9px 13px;
+}
+
+
+section .fundo-trend:hover {
+    background-color: rgb(29, 46, 61);
+    transition: 0.2s;
+}
+
+section .fundo-trend1:hover {
+    background-color: rgb(29, 46, 61);
+    transition: 0.2s;
 }
 
 section .fundo-trend span{
@@ -521,6 +606,7 @@ section .fundo-trend a{
 }
 
 section .fundo-seguir{
+    cursor: pointer;
     border-top:  1px solid rgb(56, 68, 77);
     display: flex;
     height: 60px;
@@ -528,6 +614,12 @@ section .fundo-seguir{
     align-items: center;
     padding: 9px 13px 9px 13px;
 }
+
+section .fundo-seguir:hover {
+    background-color: rgb(29, 46, 61);
+    transition: 0.2s;
+}
+
 
 section .img-seguir{
     height: 100%;
@@ -559,4 +651,28 @@ section .usu-infor span{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
     overflow-wrap: break-word;
     line-height: 1.3125;
+}
+
+section .fimdochernobyl {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+section .texto-fim{
+    padding-right: 13px;
+    line-height: calc(17.0625px);
+    font-size: 11px;
+    font-weight: 400;
+    color: rgb(136, 153, 166);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    cursor: pointer;
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+
+section .fimdochernobyl a:hover {
+    text-decoration: underline;
 }
