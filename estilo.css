@@ -10,9 +10,8 @@ body {
 }
 .container {
     display: grid;
-    width: 100vw;
-    grid-template-columns: 23% 44% 33%; 
-    grid-template-rows: 100vh;
+    width: 100%;
+    grid-template-columns: 23% 45% 32%; 
 }
 
 /* MENU PRINCIPAL */
@@ -29,45 +28,64 @@ header .ajuste-menu {
     position: fixed;
     margin-left: 3.5%;
     height: 100%;
-    
+    width: 19%;
 }
 
+header .logo {
+    width: 100%;
+}
 header .nav-menu {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-top: 6%;
+    width: 98%;
     margin-left: 2%;
 }
 header nav ul {
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 header nav ul .item{
     margin-bottom: 4px;
-    width: 17vw;
     height: 45px;
     list-style: none;
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
-header nav .ajuste-menu-2 {
-    padding: 3% 3% 3% 0;
+header nav .item-link-menu{
+    text-decoration:none;
+    padding: 0;
+    cursor: pointer;
+    padding-bottom: 4px;
+    padding-top: 4px;
     height: 100%;
-    width: 12vw;
+}
+header nav .ajuste-menu-2 {
+    padding: 9px 9px 9px 9px;
+    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: row;
 }
-header nav .ajuste-menu-2:hover {
+header nav a:hover {
     border-radius: 50px;
     background-color: rgba(29, 161, 242, 0.1);
     transition-property: background-color, box-shadow;
     transition-duration: 0.2s;
 }
+
+header nav a:hover .menu-tit{
+    color: rgb(29, 161, 242);
+}
+
+header nav a:hover svg path{
+    fill: rgb(29, 161, 242);
+} 
  header nav .menu-tit{
-     padding-left: 12%;
      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
      white-space: nowrap;
      line-height: 1.3125;
@@ -77,14 +95,15 @@ header nav .ajuste-menu-2:hover {
  }
 
  header nav .ajuste-menu-itens{
-     width: 100%;
+    margin-left: 17px;
+    margin-right: 13px;
  }
 
  header .botao-tweet{
-     width: 95%;
+     width: 92%;
      margin-bottom: 4px;
      margin-top: 4px;
-     height: 45px;
+     height: 44px;
  }
 
  header .botao-tweet a{
@@ -93,13 +112,13 @@ header nav .ajuste-menu-2:hover {
     border-radius: 50px;
     padding-left: 26px;
     padding-right: 26px;
-    height: 45px;
+    height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     color: #fff;
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-weight: bold;
     line-height: 1.3125;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
@@ -113,19 +132,26 @@ header nav .ajuste-menu-2:hover {
  /* CONTEUDO PRINCIPAL */
 main {
     grid-area: main;
-    border-left:  1px solid rgb(56, 68, 77);;
-    border-right:  1px solid rgb(56, 68, 77);;
+    border-left:  1px solid rgb(56, 68, 77);
+    border-right:  1px solid rgb(56, 68, 77);
     grid-column: 2/3;
     grid-row: 1/2;
+    height: 100%;
 }
-
+ 
 main .inicial-topo {
     width: 100%;
     height: 46px;
+}
+
+main .fixarisso{
     padding: 0 4px 0 13px;
+    background-color: rgb(21, 32, 43);
     display: flex;
-    border-top: 3px solid rgb(56, 68, 77);;
-    border-bottom: 1px solid rgb(56, 68, 77);;
+    width: 44.8%; 
+    height: 46px;
+    position: fixed; 
+    border-bottom: 1px solid rgb(56, 68, 77);
 }
 
 main .topo-titulo {
@@ -138,6 +164,12 @@ main .topo-icone {
     height: 100%;
 }
 
+main .topo-icone a:hover{
+    border-radius: 100px;
+    background-color: rgba(29, 161, 242, 0.1);
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.2s;
+}
 main .topo-texto {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
     font-size: 16px;
@@ -170,7 +202,7 @@ main .perfil-twittar img{
     border-radius: 50px;
 }
 main .acontece-twittar{
-    margin: 0 0 9px 9px;
+    margin: 0 0 6px 9px;
     width: 90%;
     height: 90%;
 }
@@ -205,24 +237,143 @@ main .input-twittar {
 
 main .icone-twittar{
     width: 100%;
-    height: 40%;
+    height: 50%;
 }
 
 main .icones-twittar{
-    width: 35%;
-    height: 70%;
+    width: 70%;
+    height: 100%;
     display: flex;
     align-items: center;
-    margin-top: 9px;
+    padding-top: 9px;
+}
+
+main .twittar-link{
+    width: 21px;
+    height: 19px;
+}
+
+
+main .icones-twittar a:hover{
+    border-radius: 100px;
+    background-color: rgba(29, 161, 242, 0.1);
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.2s;
 }
 
 main .item-icone-twittar{
-    width: 32px;
-    height: 32px;
-    margin-right: 9px;
+    width: 21px;
+    height: 19px;
+    margin-right: 15px;
     display:flex;
     align-items: center;
 }
+
+.botao-twittar{
+    width: 30%;
+    height: 100%;
+    padding-top: 9px;
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+}
+
+ .botao-twittar:hover{
+    opacity: 1;
+}
+.botao-twittarof{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(29, 161, 242);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .botao-twittarof span{
+    color: #fff;
+    line-height: 1;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+}
+
+
+main .twitter-do-caralho {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+main .fundo-tweetfirst {
+    width: 100%;
+    padding: 9px 13px 0 13px; 
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+main .tweetfirst-maykon-perfil {
+    width: 46px;
+    display: flex;
+    height: 100%;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+main .tweetfirst-maykon-perfil img {
+    border-radius: 50px;
+}
+
+main .nome-perfil {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+main .nome-perfil .usuario {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.3125;
+}
+
+main .nome-perfil .usuario-inf{
+    color: rgb(136, 153, 166);
+    margin-left: 4px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    line-height: 1.3125;
+    font-size: 13px;
+}
+
+main .texto-tweet {
+    width: 100%;
+    height: 100%;
+}
+
+main .texto-tweet span {
+    margin: 0;
+    color:#fff;
+    white-space: inherit;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font-size: 13px;
+    line-height: 1.3125;
+    font-weight: 400;
+}
+
+main .imagem-tweet {
+    margin-top: 9px;
+}
+
+main .imagem-tweet img{
+    border-radius: 20px;
+    border: 0.1px solid #fff;
+}
+
 /* CONTEUDO LATERAL DIREITO */
 section {
     grid-area: section;
@@ -231,8 +382,8 @@ section {
 }
 
 section .lateral-buscar {
-    margin-bottom: 9px;
-    width: 85%;
+    margin-bottom: 12px;
+    width: 87%;
     height: 46px;
     display: flex;
     align-items: stretch;
@@ -285,4 +436,127 @@ section .input-buscar {
     width: 100%;
     padding: 9px;
     border: inherit;
+}
+
+section .titulo-trend{
+    width: 100%;
+    height: 40px;
+    padding: 9px 13px 9px 13px;  
+    display: flex;
+    align-items: center; 
+}
+
+section .titulo-trend span{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+}
+
+section .fundo-trend1{
+    width: 100%;
+    border-top:  1px solid rgb(56, 68, 77);
+    height: 85px;
+    padding: 9px 13px 9px 13px;
+    display: flex;
+    flex-direction: column;
+}
+
+section .fundo-trend-efeito{
+    width: 100%;
+    height: 85px;
+    text-decoration: none;
+}
+
+main .fundo-trend1 a:hover{
+    border-radius: 100px;
+    background-color: rgba(29, 161, 242, 0.1);
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.2s;
+}
+
+section .trend-titprincipal {
+    color:white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+section .trend-infprincipal{
+    padding-top: 2px;
+    color: rgb(136, 153, 166);
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font-size: 13px;
+    line-height: 1.3125;
+}
+
+
+section .fundo-trend{
+    width: 100%;
+    border-top:  1px solid rgb(56, 68, 77);
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    padding: 9px 13px 9px 13px;
+}
+
+section .fundo-trend span{
+    color:white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font-size: 12px;
+    padding-top: 3px;
+    font-weight: bold;
+}
+
+section .fundo-trend a{
+    text-decoration: none;
+    color: rgb(29, 161, 242);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+section .fundo-seguir{
+    border-top:  1px solid rgb(56, 68, 77);
+    display: flex;
+    height: 60px;
+    flex-direction: row;
+    align-items: center;
+    padding: 9px 13px 9px 13px;
+}
+
+section .img-seguir{
+    height: 100%;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+section .img-seguir img{
+    border-radius: 50px;
+}
+
+section .usu-seguir{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 4px;
+    margin-right: 4px;
+    height: 90%;
+}
+
+section .usu-infor{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 70%;
+}
+
+section .usu-infor span{
+    font-size: 13px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    overflow-wrap: break-word;
+    line-height: 1.3125;
 }
